@@ -19,8 +19,11 @@ button.addEventListener('click', e => {
 cargarEventsListeners();
 
 function cargarEventsListeners() {
+    // Agregar producto al carrito
     prodList.addEventListener('click', agregarCarrito);
+    // Elimina productos del carrito
     carrito.addEventListener('click', eliminarAticulo);
+    // Vaciar carrito
     vaciarButton.addEventListener('click', e => {
         e.preventDefault();
         while (carritoBody.firstChild) {
@@ -30,6 +33,8 @@ function cargarEventsListeners() {
     })
 }
 
+// agrega el producto al carrito
+
 function agregarCarrito(e) {
     if (e.target.classList.contains('producto__button')) {
         e.preventDefault();
@@ -38,7 +43,7 @@ function agregarCarrito(e) {
     }
 }
 
-// ELIMINA EL ARTICULO DEL CARRITO
+// elimina el producto del carrito
 
 function eliminarAticulo(e) {
     if(e.target.classList.contains("carrito__vaciarButton")) {
@@ -51,6 +56,7 @@ function eliminarAticulo(e) {
 }
 
 function leerDatos(articulo) {
+    // Crea un objeto con el contenido del producto actual
     const infoProducto = {
         imagen: articulo.querySelector('img').src,
         nombre: articulo.querySelector('.producto__text').textContent,
@@ -79,6 +85,8 @@ function leerDatos(articulo) {
     carritoHTML();
 }
 
+// Muestra el carrito de compras en el HTML
+
 function carritoHTML() {
 
     // Limpiar el HTML
@@ -98,7 +106,7 @@ function carritoHTML() {
             <td>${articulo.precio}</td>
             <td>${articulo.cantidad}</td>
             <td>
-                <a href="#" class="carrito__vaciarButton" data-id="${articulo.id}">X</a>
+                <a href="#" class="carrito__vaciarButton eliminar" data-id="${articulo.id}">X</a>
             </td>
         `;
 
