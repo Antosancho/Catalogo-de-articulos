@@ -20,6 +20,10 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+td {
+    text-align: center;
+}
+
 .header {
     min-height: 70px;
     display: flex;
@@ -59,6 +63,8 @@ h1 {
 .carrito__vaciarButton-container {
     display: flex;
 }
+
+
 
 .header__carrito_ventana {
     display: none;
@@ -164,7 +170,13 @@ h1 {
     background-color: #73c2dc;
 }
 
+.eliminar {
+    background-color: #f21;
+}
 
+.eliminar:hover {
+    background-color: #f55;
+}
 
 @media screen and (min-width: 1200px) {
     .main__productos {
