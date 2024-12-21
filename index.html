@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto carrito de compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__titulo_button-container">
+            <h1>Supermercado digital</h1>
+            <a class="header__carrito" href="" id="carrito">
+                <img src="imagenes/carrito.png">
+            </a>
+        </div>
+        <div class="header__carrito_ventana">
+            <table class="carrito__table">
+                <thead class="carrito__table__head">
+                    <tr class="carrito__table__head-tr">
+                        <th class="carrito__table-item">Imagen</th>
+                        <th class="carrito__table-item">Nombre</th>
+                        <th class="carrito__table-item">Precio</th>
+                        <th class="carrito__table-item">Cantidad</th>
+                        <th class="carrito__table-item">Borrar articulo</th>
+                    </tr>
+                </thead>
+                <tbody class="carrito__table__body"></tbody>
+            </table>
+            <div class="carrito__vaciarButton-container">
+                <a class="carrito__vaciarButton" href="">Vaciar carrito</a>
+            </div> <!--carrito__vaciarButton-container-->
+        </div> <!--header__carrito_ventana-->
+    </header>
+    <div class="main-center">
+        <main class="main">
+            <div class="main__titulo-container">
+                <h2 class="main__titulo">Productos</h2>
+            </div> <!--main__titulo-container-->
+            <div class="main__productos">
+                <div class="producto" id="manteca">
+                    <img class="producto__img" src="imagenes/manteca.webp">
+                    <div class="producto__info">
+                        <div class="producto__text">Manteca Windy</div>
+                        <div class="producto__precio">$1300</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div> <!--producto__info-->
+                </div> <!--producto-->
+                <div class="producto" id="tomate">
+                    <div class="img-container"></div>
+                    <img class="producto__img" src="imagenes/tomate.webp">
+                    <div class="producto__info">
+                        <div class="producto__text">Tomate molto</div>
+                        <div class="producto__precio">$1500</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="producto" id="budweiser">
+                    <img class="producto__img" src="imagenes/cerveza-budweiser.webp">
+                    <div class="producto__info">
+                        <div class="producto__text">Pack 6 latas cerveza budweiser</div>
+                        <div class="producto__precio">$10000</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="producto" id="pan-lactal-veneziana">
+                    <img class="producto__img" src="imagenes/pan-lactal-veneziana.png">
+                    <div class="producto__info">
+                        <div class="producto__text">Pan lactal Veneziana</div>
+                        <div class="producto__precio">$2500</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="producto" id="pasta-mani">
+                    <img class="producto__img" src="imagenes/mani-king-nuevo.jpg">
+                    <div class="producto__info">
+                        <div class="producto__text">Pasta de mani Mani King</div>
+                        <div class="producto__precio">$3000</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="producto" id="pasta-mani-chocolate">
+                    <img class="producto__img" src="imagenes/pasta-mani-chocolate.png">
+                    <div class="producto__info">
+                        <div class="producto__text">pasta de mani chocolate Mani King</div>
+                        <div class="producto__precio">$2700</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="producto" id="fideos-molto-tirabuzon">
+                    <img class="producto__img" src="imagenes/fideos-molto-tirabuzon.jpg">
+                    <div class="producto__info">
+                        <div class="producto__text">Fideos Molto tidabuzon</div>
+                        <div class="producto__precio">$2000</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="producto" id="fideos-molto-deagles">
+                    <img class="producto__img" src="imagenes/fideos-molto-deagles.webp">
+                    <div class="producto__info">
+                        <div class="producto__text">Fideos Molto deagles</div>
+                        <div class="producto__precio">$2000</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="producto" id="fideos-molto-moñoespin">
+                    <img class="producto__img" src="imagenes/fideos-molto-moñoespin.webp">
+                    <div class="producto__info">
+                        <div class="producto__text">fideos molto moño espinaca</div>
+                        <div class="producto__precio">$2200</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="producto" id="arroz-molto">
+                    <img class="producto__img" src="imagenes/Arroz-Molto.webp">
+                    <div class="producto__info">
+                        <div class="producto__text">Arroz molto</div>
+                        <div class="producto__precio">$1600</div>
+                        <a class="producto__button" href="">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </main> <!--main-->
+    </div> <!--main-center-->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__container__info">
+                <h3>Supermercado digital</h3>
+                <p>Supermercado digital es una tienda online que te permite comprar productos de supermercado desde la comodidad de tu hogar.</p>
+            </div>
+            <div class="footer__container__info">
+                <h3>Contacto</h3>
+                <p>Telefono: 123456789</p>
+                <p>Email:
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

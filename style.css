@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    background-color: #eee;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    width: 100vw;
+}
+h1 {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 228, 78);
+}
+
+.header__titulo_button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#carrito img {
+    width: 30px;
+}
+
+.tbody__img {
+    width: 80px;
+}
+
+.carrito__table__head {
+    border-bottom: 1px solid #eee;
+}
+
+.carrito__table-item {
+    padding: 5px 10px 5px 10px;
+    font-weight: normal;
+}
+
+.main-center {
+    display: flex;
+    justify-content: center;
+}
+
+.carrito__vaciarButton-container {
+    display: flex;
+}
+
+.header__carrito_ventana {
+    display: none;
+    width: 100%;
+}
+
+.header__carrito_ventana.show {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.main {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__titulo {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.2rem;
+    padding: 30px;
+}
+
+.main__productos {
+    width: 100%; /* Ajusta el ancho para que sea responsive */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); /* Ajusta las columnas para que sean responsive */
+    grid-auto-rows: min-content;
+    gap: 15px;
+    padding-bottom: 60px;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.producto {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    align-items: center;
+    height: min-content;
+    padding: 7px;
+}
+
+#tomate, #budweiser, #pasta-mani, #fideos-molto-deagles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#fideos-molto-tirabuzon img {
+    width: 160px;
+}
+
+#fideos-molto-moñoespin img {
+    width: 130px;
+}
+
+#budweiser img, #pasta-mani img {
+    width: 125px;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto__info {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.producto__img {
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+.producto__text {
+    min-width: 150px;
+    max-width: 200px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+}
+
+.producto__button, .carrito__vaciarButton {
+    font-size: 1rem;
+    background-color: #32B7E4;
+    padding: 3px;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.producto__button:hover, .carrito__vaciarButton:hover {
+    background-color: #73c2dc;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .main__productos {
+        grid-template-columns: repeat(2, minmax(185px,1fr)) repeat(auto-fill, minmax(185px, 1fr));
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .producto {
+        height: auto;
+    }
+    .header__carrito_ventana {
+        padding: 20px;
+        position: absolute;
+        width: 450px;
+        min-height: 410px;
+        background-color: #fff;
+        top: 70px;
+        right: 17%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Montserrat;
+        display: none;
+        z-index: 1;
+        max-height: 500px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header__titulo_button-container.style{
+        padding: 20px 20px;
+    }
+    .header.style {
+        justify-content: space-between;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__container__info {
+    max-width: 600px;
+}
+
+.footer__container__info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.footer__container__info p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+/* Responsive styles for footer */
+@media screen and (min-width: 600px) {
+    .footer__container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
