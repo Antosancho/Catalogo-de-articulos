@@ -64,6 +64,7 @@ td {
 .carrito__vaciarButton-container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
