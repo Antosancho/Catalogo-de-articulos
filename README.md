@@ -1,4 +1,4 @@
-# Supermercado Digital
+[# Supermercado Digital
 
 Este es un proyecto de un catálogo de un supermercado digital donde se pueden agregar productos al carrito, sacarlos y vaciar el carrito.
 
@@ -32,4 +32,4 @@ Luego, abre el archivo `index.html` en tu navegador preferido.
 
 ## Vista Previa
 
-Puedes ver una vista previa del proyecto en GitHub Pages [aquí](https://tu-usuario.github.io/supermercado-digital/).
+Puedes ver una vista previa del proyecto en GitHub Pages [aquí](https://antosancho.github.io/Supermercado-Digital/).
